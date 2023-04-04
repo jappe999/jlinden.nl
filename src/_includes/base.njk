@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+	<link rel="preload" href="/assets/fonts/ibm-plex-mono/ibm-plex-mono-Medium.ttf" crossorigin as="font" type="font/ttf" />
+	<link rel="preload" href="/assets/fonts/ibm-plex-sans/ibm-plex-sans-Medium.ttf" crossorigin as="font" type="font/ttf" />
+
+	<script async defer src="/assets/js/scroll.js"></script>
+</head>
+
+<body class="bg-yellow overflow-y-scroll">{{ content | safe }}</body>
+
+</html>

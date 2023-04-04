@@ -1,0 +1,23 @@
+{% set prefix = '/' + page.url.split('/')[1] %}
+
+<nav class="mx-auto w-full max-w-5xl px-8 fixed top-12 inset-x-0 z-40">
+  <div class="flex flex-row justify-between bg-white rounded-full p-2 shadow-bold">
+    <img src="/assets/images/profile.jpg" alt="" height="56" width="56" class="rounded-full" />
+
+    <ul class="w-full flex flex-row justify-center my-auto">
+      {% for item in menu %}
+  			<li class="py-1">
+  				<a
+  				  class="mx-1 px-3 py-1 border-2 {% if item.url == prefix %} border-gray bg-red text-white rounded-full {% else %} border-transparent {% endif %}"
+  				  href="{{ item.url }}"
+  				  {% if item.url == prefix %} aria-current="page" {% endif %}
+  				>
+  					{{ item.title }}
+  				</a>
+  			</li>
+  		{% endfor %}
+    </ul>
+
+    <div class="w-14 h-14 aspect-square"></div>
+  </div>
+</nav>

@@ -1,0 +1,22 @@
+---
+title: Home
+layout: page.njk
+---
+
+<main class="min-h-screen w-full max-w-4xl mx-auto px-8">
+  <section class="-mt-32 h-screen w-full flex flex-col md:flex-row justify-center items-center scroll-resize">
+    <h1 class="text-white text-5xl drop-shadow-bold font-mono md:mr-12 mb-12 md:mb-0 text-center md:text-left">
+      I create cool stuff on the web.
+    </h1>
+    <img src="/assets/images/profile.jpg" alt="" height="250" width="250"
+      class="rounded-full border-2 border-gray shadow-bold" />
+  </section>
+
+  <section class="min-h-screen pt-32">
+    <h2>Recent</h2>
+
+    {% for article in collections.all %}
+    <a href="{{ article.url }}">{{ article.data.title }}</a>
+    {% endfor %}
+  </section>
+</main>
