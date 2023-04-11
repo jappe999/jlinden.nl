@@ -9,4 +9,14 @@ window.onload = () => {
   document.addEventListener('scroll', () => requestAnimationFrame(onScroll));
 
   requestAnimationFrame(onScroll);
+
+  const scrollAction = document.getElementById('scroll-down');
+
+  scrollAction.addEventListener('click', () => {
+    const paddingTop = 164;
+    window.scrollTo({
+      top: window.outerHeight - paddingTop,
+      behavior: "smooth"
+    });
+  })
 };

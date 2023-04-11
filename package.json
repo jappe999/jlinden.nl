@@ -6,8 +6,8 @@
   "scripts": {
     "serve": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
-    "tailwind": "npx postcss src/style.css --o src/_includes/assets/css/style.css --watch",
-    "start": "concurrently \"npm run tailwind\" \"npm run serve\"",
+    "tailwind": "npx postcss src/style.css --o src/_includes/assets/css/style.css",
+    "start": "concurrently \"npm run tailwind -- --watch\" \"npm run serve\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
