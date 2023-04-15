@@ -482,7 +482,7 @@ video {
 	font-family: 'IBM Plex Sans';
 	font-style: normal;
 	font-display: swap;
-	src: url('/assets/fonts/ibm-plex-sans/ibm-plex-sans-Medium.ttf');
+	src: url('/assets/fonts/ibm-plex-sans/ibm-plex-sans-Regular.ttf');
 }
 
 .scroll-resize {
