@@ -6,13 +6,13 @@ eleventyExcludeFromCollections: true
 
 _Hi there! 👋_
 
-My name is Jasper. I create stuff in my free time. What kind of stuff? Glad you asked!
+My name is Jasper. I create software in my free time. What kind of software? Glad you asked!
 
-I build whatever interests me. That means my projects go from websites and apps to a rendering engine [link to project] and a private cloud infrastructure [link to blog post].
+I build whatever interests me. That means my projects range from websites and apps to a [rendering engine](/projects/rendering-engine) and a [private cloud infrastructure](/projects/private-cloud).
 
-Wow. It's really hard to write down what interests me! Anyhow, at the moment I'm working on my app Boodschappenhulp. It aims to simplify grocery shopping in the Netherlands by allowing users to compare products across different supermarkets.
+Wow. It's really hard to write down what interests me! Anyhow, at the moment I'm working on my app [Boodschappenhulp](/projects/boodschappenhulp). It aims to simplify grocery shopping in the Netherlands by allowing users to compare products across different supermarkets.
 
-I'm also trying to keep a blog. Something that I've been wanting to have for a while now, but never saw it through. You can find my first blog on this website.
+I'm also trying to keep a blog. Something that I've been wanting to have for a while now, but never saw it through. You can find [my first blog](/blog/hello-world) on this website.
 
 If you want to keep in touch with me, you can find me on socials.
 
