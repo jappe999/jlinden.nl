@@ -1,9 +1,6 @@
 ---
 title: Notes
-layout: page.njk
+layout: list.njk
+collection: notes
 eleventyExcludeFromCollections: true
 ---
-
-{% for note in collections.notes %}
-<a href="{{ note.url }}">{{ note.data.title }}</a>
-{% endfor %}

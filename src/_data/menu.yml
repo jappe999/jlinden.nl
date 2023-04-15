@@ -1,7 +1,7 @@
 - title: Home
   url: /
-- title: Notes
-  url: /notes
+# - title: Notes
+#   url: /notes
 - title: Blog
   url: /blog
 - title: Projects

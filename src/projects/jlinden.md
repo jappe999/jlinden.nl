@@ -1,6 +1,9 @@
 ---
 title: jlinden.nl
-abstract: My personal website
+abstract: My personal website.
+image: /assets/images/profile.jpg
+tags: 11ty, website
+draft: true
 ---
 
 My personal site is never really finished. And I like to change it up every now and then. My previous website was built with Svelte and although I really liked it, it lacked simplicity.

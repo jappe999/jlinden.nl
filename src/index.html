@@ -47,15 +47,17 @@ eleventyExcludeFromCollections: true
     <ul class="w-full flex flex-wrap justify-between">
       {% for article in collections.all %}
       <li
-        class="bg-white rounded my-4 shadow-bold w-full overflow-hidden border-2 border-black"
+        class="bg-white rounded-lg my-4 mx-4 shadow-bold w-full overflow-hidden border border-black"
       >
         <a href="{{ article.url }}" class="flex">
           <div class="w-24 flex">
+            {% if article.data.image %}
             <img
               src="{{ article.data.image }}"
               alt=""
-              class="object-cover bg-teal"
+              class="object-cover bg-teal border-r border-black"
             />
+            {% endif %}
           </div>
           <div class="p-2">
             <h3 class="text-2xl font-mono">{{ article.data.title }}</h3>

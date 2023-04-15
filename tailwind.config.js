@@ -15,7 +15,8 @@ module.exports = {
       },
       boxShadow: {
         bold: '6px 4px 0px #1E1E1E',
-        yellow: '0 1px 3px 0 #FFE66D, 0 1px 2px -1px #FFE66D',
+        'bold-bottom': '0px 4px 0px #1E1E1E',
+        pressed: '0px 0px 0px #1E1E1E, inset 0 2px 4px 0 rgb(0 0 0 / 0.2)',
       },
       dropShadow: {
         bold: '2px 2px 0px #1E1E1E',
@@ -24,6 +25,7 @@ module.exports = {
       margin: {
         'screen-h': '100vh',
         'screen-w': '100vw',
+        'content-offset': '33vh',
       },
     },
   },
