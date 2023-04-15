@@ -21,6 +21,10 @@
   will-change: transform;
 }
 
+p {
+	@apply leading-7 mb-2;
+}
+
 #scroll-down-arrow {
 	animation: .75s scroll-down alternate infinite;
 }

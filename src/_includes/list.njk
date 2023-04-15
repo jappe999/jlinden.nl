@@ -1,8 +1,5 @@
 ---
-title: Projects
-layout: list.njk
-collection: projects
-eleventyExcludeFromCollections: true
+layout: page.njk
 ---
 
 <div class="min-h-screen max-w-3xl mt-96 mx-auto mb-4">
@@ -12,15 +9,17 @@ eleventyExcludeFromCollections: true
   </header>
 
   <ul class="w-full flex flex-wrap justify-between">
-    {% for project in collections.projects %}
+    {% for item in collections[collection] %}
     <li class="bg-white rounded my-4 mx-4 shadow-bold w-full overflow-hidden border-2 border-black">
-        <a href="{{ project.url }}" class="flex">
-        <div class="w-24 flex {% if project.data.image %} aspect-square {% endif %}">
-            <img src="{{ project.data.image }}" alt="" class="object-cover bg-teal">
+        <a href="{{ item.url }}" class="flex">
+        <div class="w-24 flex">
+            {% if item.data.image %}
+            <img src="{{ item.data.image }}" alt="" class="aspect-square object-cover bg-teal">
+            {% endif %}
         </div>
         <div class="p-2">
-            <h3 class="text-2xl font-mono">{{ project.data.title }}</h3>
-            <p class="text-black">{{ project.data.abstract }}</p>
+            <h3 class="text-2xl font-mono">{{ item.data.title }}</h3>
+            <p class="text-black">{{ item.data.abstract }}</p>
         </div>
         </a>
     </li>

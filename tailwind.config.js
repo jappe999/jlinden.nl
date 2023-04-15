@@ -14,7 +14,7 @@ module.exports = {
         black: '#1E1E1E'
       },
       boxShadow: {
-        bold: '4px 4px 0px #1E1E1E',
+        bold: '6px 4px 0px #1E1E1E',
         yellow: '0 1px 3px 0 #FFE66D, 0 1px 2px -1px #FFE66D',
       },
       dropShadow: {
