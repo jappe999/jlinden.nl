@@ -69,7 +69,6 @@ module.exports = (config) => {
 			input: 'content',
 			output: '../_site',
 			includes: '../src/_includes',
-			// layouts: '../src/_layouts',
 			data: '../src/_data',
 			assets: '../assets',
     }
