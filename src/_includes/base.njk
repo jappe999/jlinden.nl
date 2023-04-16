@@ -4,12 +4,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ title }}</title>
+    <title>{{ title or metadata.title }}</title>
+		<meta name="description" content="{{ abstract or metadata.abstract }}">
 
-		{%- css %}{% include "assets/css/style.css" %}{% endcss %}
+		{#- Atom and JSON feeds included by default #}
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
+
+		{%- css %}{% include "../../assets/css/style.css" %}{% endcss %}
 		{#- Or add from node_modules #}
-
-		<link rel="stylesheet" href="/assets/css/prism-theme.css" />
 
 		{#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
 		<style>{% getBundle "css" %}</style>
@@ -31,6 +34,8 @@
   </head>
 
   <body class="bg-yellow overflow-y-scroll">
+		<a href="#skip" class="hidden">Skip to main content</a>
+
     {{ content | safe }}
 
     <script async defer type="module" src="/assets/js/scroll.js"></script>

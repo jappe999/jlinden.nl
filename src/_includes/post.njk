@@ -2,6 +2,10 @@
 layout: page.njk
 ---
 
+{# Only include the syntax highlighter CSS on blog posts #}
+{%- css %}{% include "../../assets/css/prism-theme.css" %}{% endcss %}
+{%- css %}{% include "node_modules/prismjs/plugins/diff-highlight/prism-diff-highlight.min.css" %}{%- endcss %}
+
 <article class="max-w-3xl mt-content-offset mx-auto mb-8 md:mb-12">
   <header class="scroll-resize mb-4 mx-4">
     <h1 class="w-full mb-2 text-4xl md:text-5xl font-mono text-white drop-shadow-bold break-word">{{ title }}</h1>

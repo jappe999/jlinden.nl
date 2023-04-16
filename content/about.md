@@ -1,6 +1,7 @@
 ---
 layout: post.njk
 title: About Jasper
+permalink: /about-me
 eleventyExcludeFromCollections: true
 ---
 
