@@ -4,7 +4,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ title }}</title>
+		<title>{{ title }} | {{ metadata.title }}</title>
+		<meta name="description" content="{{ description or metadata.description }}">
 
 		{%- css %}{% include "assets/css/style.css" %}{% endcss %}
 		{#- Or add from node_modules #}
