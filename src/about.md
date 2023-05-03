@@ -1,7 +1,6 @@
 ---
 layout: post.njk
 title: About Jasper
-eleventyExcludeFromCollections: true
 ---
 
 _Hi there! 👋_
