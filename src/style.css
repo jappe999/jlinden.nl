@@ -27,7 +27,7 @@ article section h1 {
 article section h2 {
 	@apply font-mono text-2xl mt-4 mb-1;
 }
-article ul {
+article ul:not(.exclude-styling) {
 	@apply pl-4 list-disc;
 }
 article a[href]:not(.exclude-styling) {

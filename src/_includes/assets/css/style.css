@@ -502,7 +502,7 @@ article section h2 {
   font-size: 1.5rem;
   line-height: 2rem;
 }
-article ul {
+article ul:not(.exclude-styling) {
   list-style-type: disc;
   padding-left: 1rem;
 }
