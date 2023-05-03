@@ -4,6 +4,9 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
+const pluginDrafts = require("./config/plugins/drafts.js");
+const pluginImages = require("./config/plugins/images.js");
+
 module.exports = (config) => {
   config.setServerOptions({ port: 81 });
   config.addPassthroughCopy({
@@ -18,6 +21,9 @@ module.exports = (config) => {
 	});
 	config.addPlugin(EleventyHtmlBasePlugin);
 	config.addPlugin(pluginBundle);
+
+  config.addPlugin(pluginDrafts);
+  config.addPlugin(pluginImages);
 
 
   return {
