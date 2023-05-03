@@ -19,6 +19,10 @@
 
 .scroll-resize {
   will-change: transform;
+  transition: .1s transform;
+}
+article section h1 {
+	@apply font-mono text-3xl mb-1;
 }
 article section h2 {
 	@apply font-mono text-2xl mt-4 mb-1;
