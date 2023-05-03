@@ -487,6 +487,13 @@ video {
 
 .scroll-resize {
   will-change: transform;
+  transition: .1s transform;
+}
+article section h1 {
+  margin-bottom: 0.25rem;
+  font-family: IBM Plex Mono;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 article section h2 {
   margin-top: 1rem;
