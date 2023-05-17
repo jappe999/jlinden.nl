@@ -6,6 +6,7 @@ const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 const pluginDrafts = require("./config/plugins/drafts.js");
 const pluginImages = require("./config/plugins/images.js");
+const pluginMarkdown = require("./config/plugins/markdown.js");
 
 module.exports = (config) => {
   config.setServerOptions({ port: 81 });
@@ -24,7 +25,7 @@ module.exports = (config) => {
 
   config.addPlugin(pluginDrafts);
   config.addPlugin(pluginImages);
-
+  config.addPlugin(pluginMarkdown);
 
   return {
     dir: {

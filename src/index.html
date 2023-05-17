@@ -46,15 +46,15 @@ layout: page.njk
     <ul class="w-full flex flex-wrap justify-between">
       {% for article in collections.posts %}
       <li
-        class="bg-white rounded-lg my-4 mx-4 shadow-bold w-full overflow-hidden border border-black"
+        class="bg-white rounded-lg my-4 mx-4 shadow-bold w-full overflow-hidden border-2 border-black min-h-[6.1875rem]"
       >
-        <a href="{{ article.url }}" class="flex">
-          <div class="w-24 flex">
+        <a href="{{ article.url }}" class="flex h-full">
+          <div class="w-24 flex bg-teal border-r-2 border-black">
             {% if article.data.image %}
             <img
               src="{{ article.data.image }}"
               alt=""
-              class="object-cover bg-teal border-r border-black"
+              class="aspect-square object-cover"
             />
             {% endif %}
           </div>

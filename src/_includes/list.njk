@@ -10,11 +10,11 @@ layout: page.njk
 
   <ul class="w-full flex flex-wrap justify-between">
     {% for item in collections[collection] %}
-    <li class="my-4 mx-4 w-full bg-white rounded-lg shadow-bold overflow-hidden border border-black">
-        <a href="{{ item.url }}" class="flex">
-          <div class="w-24 flex">
+    <li class="my-4 mx-4 w-full bg-white rounded-lg shadow-bold overflow-hidden border-2 border-black min-h-[6.1875rem]">
+        <a href="{{ item.url }}" class="flex h-full">
+          <div class="w-24 flex bg-teal border-r-2 border-black">
               {% if item.data.image %}
-              <img src="{{ item.data.image }}" alt="" class="aspect-square object-cover bg-teal border-r border-black">
+              <img src="{{ item.data.image }}" alt="" class="aspect-square object-cover">
               {% endif %}
           </div>
           <div class="p-2">
