@@ -4,7 +4,6 @@ abstract: An app to help with grocery shopping.
 image: /assets/images/boodschappenhulp-logo.svg
 imageAlt: Boodchappenhulp logo
 tags: app, node, typescript, monorepo, nestjs, angular, ionic
-draft: true
 ---
 
 <img src="{{ image }}" class="bg-teal p-1 m-1 rounded-lg float-right">
@@ -26,4 +25,4 @@ Because I decided to use Angular and NestJS and both use Typescript, it was only
 
 ## Conclusion
 
-This project is still a work in progress, but you can already try out the beta over at [boodschappenhulp.jlinden.nl](https://boodschappenhulp.jlinden.nl). If you have any questions, remarks or just want to say hi, feel free to reach out to me on [Mastodon](https://indieweb.social/@jasper).
+This project is still a work in progress, but you can already try out the beta over at [boodschappen-hulp.nl](https://boodschappen-hulp.nl). If you have any questions, remarks or just want to say hi, feel free to reach out to me on [Mastodon](https://indieweb.social/@jasper).
