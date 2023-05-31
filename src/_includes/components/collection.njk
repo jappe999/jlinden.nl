@@ -1,0 +1,19 @@
+<ul class="w-full flex flex-wrap justify-between">
+  {% for item in collections[collection] %}
+  <li class="my-4 mx-4 w-full bg-white rounded-lg shadow-bold overflow-hidden border-2 border-black min-h-[6.1875rem]">
+      <a href="{{ item.url }}" class="flex h-full">
+        <div class="w-24 flex">
+            {% if item.data.image %}
+            <img src="{{ item.data.image }}" alt="" class="aspect-square object-cover bg-teal border-r-2 border-black">
+            {% elif item.data.icon %}
+            <p class="aspect-square text-6xl m-auto p-2 pr-0">{{ item.data.icon }}</p>
+            {% endif %}
+        </div>
+        <div class="w-full p-2 flex flex-col justify-center">
+            <h3 class="text-2xl font-mono">{{ item.data.title }}</h3>
+            <p class="text-black">{{ item.data.abstract }}</p>
+        </div>
+      </a>
+  </li>
+  {% endfor %}
+</ul>
