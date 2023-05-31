@@ -1,6 +1,7 @@
 ---
 title: Private cloud
 abstract: Running apps on my self-hosted cloud.
+icon: ☁️
 tags: docker, infrastructure
 draft: true
 ---

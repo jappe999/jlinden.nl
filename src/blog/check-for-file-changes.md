@@ -1,6 +1,7 @@
 ---
 title: Check for file changes in GitHub Actions
 permalink: /blog/check-for-file-changes-in-github-actions
+icon: 🗄️
 tags: github actions, git, ci/cd
 draft: true
 ---

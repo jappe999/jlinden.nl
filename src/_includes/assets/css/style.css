@@ -525,8 +525,8 @@ video {
 article section h1,
 article section h2,
 article section h3 {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0px;
   font-family: IBM Plex Mono;
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -586,14 +586,20 @@ article a[target="_blank"]:not(.exclude-styling)::after {
 	top: 0px;
 	bottom: 0px;
 	right: -1.25rem;
+	display: flex;
 	width: 1.25rem;
 	padding-left: 0.25rem;
 }
 
-article p {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+article p,
+article ul {
+  margin-top: 0.25rem;
   line-height: 1.75rem;
+}
+
+article p:not(:last-of-type),
+article ul:not(:last-of-type) {
+  margin-bottom: 1rem;
 }
 
 article pre[class*="language-"] {
@@ -614,6 +620,7 @@ article blockquote {
 }
 
 article blockquote p {
+  margin-top: 0px;
   margin-bottom: 0px;
 }
 
@@ -674,6 +681,10 @@ article blockquote p {
 
 .m-1 {
   margin: 0.25rem;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .mx-1 {
@@ -968,6 +979,10 @@ article blockquote p {
   padding-bottom: 0.5rem;
 }
 
+.pr-0 {
+  padding-right: 0px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -988,6 +1003,11 @@ article blockquote p {
 
 .text-5xl {
   font-size: 3rem;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
   line-height: 1;
 }
 
@@ -1088,11 +1108,6 @@ article blockquote p {
 }
 
 @media (min-width: 640px) {
-
-  .sm\:mx-8 {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
 
   .sm\:shadow-bold {
     --tw-shadow: 6px 4px 0px #1E1E1E;
