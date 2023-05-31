@@ -1,7 +1,7 @@
 ---
 title: Rendering engine
 abstract: My attempt at creating a rendering engine in C++.
-icon: 👾
+icon: 🎮
 tags: c++
 draft: true
 ---

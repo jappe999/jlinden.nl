@@ -4,7 +4,6 @@ permalink: /projects/personal-website/index.html
 abstract: The sites I've built in the past years and what I used them for.
 icon: 💻
 tags: 11ty, website
-draft: true
 ---
 
 A personal website is something, I think, adds great value to someones digital life. It can be a digital garden of some sorts. I've always wanted my personal website to be like that anyway. I've had quite a few sites in the past years but none of them felt like that digital garden, until now.
