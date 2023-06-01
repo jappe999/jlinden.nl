@@ -9,7 +9,7 @@ In college I did a minor game development which was really out of my comfort zon
 
 ## What does it do?
 
-I'm trying to divide the project into 2 components: a library to process vector data and pass it on to the GPU using OpenGL and an editor built on that library to easily interact with objects. You can find more information on the architecture in the [Git repository](https://github.com/jappe999/opengl-renderings-engine).
+I'm trying to divide the project into 2 components: a library to process vector data and pass it on to the GPU using OpenGL and an editor built on that library to easily interact with objects. You can find more information on the architecture in the [Git repository](https://github.com/jappe999/opengl-rendering-engine).
 
 ## What's the goal?
 
