@@ -4,24 +4,24 @@
   {% set prefix = '/' %}
 {% endif %}
 
-<div class="mx-auto w-full max-w-5xl px-8 fixed top-10 inset-x-0 z-40">
-  <div class="relative flex flex-col md:flex-row justify-between bg-white rounded-3xl p-2 drop-shadow sm:shadow-bold">
-    <div class="w-full md:w-16 flex md:contents justify-between items-center">
+<div class="fixed inset-x-0 z-40 w-full max-w-5xl px-8 mx-auto top-10">
+  <div class="relative flex flex-col justify-between p-2 bg-white md:flex-row rounded-3xl drop-shadow sm:shadow-bold">
+    <div class="flex items-center justify-between w-full md:w-16 md:contents">
       <a href="/" class="w-14 h-14 aspect-square">
-        <img src="/assets/images/profile.jpg" alt="" height="56" width="56" class="rounded-2xl w-14 h-14 " />
+        <img src="/assets/images/logo.svg" alt="" height="56" width="56" class="rounded-2xl w-14 h-14 " />
       </a>
 
-      <div class="w-14 h-14 aspect-square aspect-0 flex md:hidden">
+      <div class="flex w-14 h-14 aspect-square aspect-0 md:hidden">
         <button class="p-3" id="menu-toggle">
           <img src="/assets/icons/menu-toggler.svg" alt="Toggle menu" width="32" height="22.75" />
         </button>
       </div>
     </div>
 
-    <nav id="menu" class="w-full max-h-0 md:max-h-20 md:flex items-center opacity-0 transition-all right-0 my-auto md:opacity-100">
-      <ul class="h-full w-full flex flex-col md:flex-row md:justify-center items-center mt-2 md:mt-0 md:pl-4 py-2 md:py-0 border-t-2 md:border-0 border-gray">
+    <nav id="menu" class="right-0 items-center w-full my-auto overflow-hidden transition-all opacity-0 max-h-0 md:max-h-20 md:flex md:opacity-100">
+      <ul class="flex flex-col items-center w-full h-full py-2 mt-2 border-t-2 md:flex-row md:justify-center md:mt-0 md:pl-4 md:py-0 md:border-0 border-gray">
         {% for item in menu %}
-          <li class="w-full md:w-auto flex py-1">
+          <li class="flex w-full py-1 md:w-auto">
             <a
               class="w-full mx-1 px-5 py-2 rounded-full border hover:border-black focus:border-black transition shadow-none hover:shadow-bold-bottom focus:shadow-bold-bottom hover:-translate-y-1 focus:-translate-y-1 focus:bg-red focus:text-white {% if item.url == prefix %} border-black bg-red text-white {% else %} border-transparent {% endif %}"
               href="{{ item.url }}"
@@ -32,7 +32,7 @@
           </li>
         {% endfor %}
       </ul>
-      <div class="my-4 md:my-0 ml-auto mr-4">
+      <div class="my-4 ml-auto mr-4 md:my-0">
         {% include 'components/socials.njk' %}
       </div>
     </nav>
