@@ -725,6 +725,11 @@ article blockquote p {
   margin-bottom: auto;
 }
 
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
