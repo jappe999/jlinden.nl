@@ -2,11 +2,9 @@
     <img src="src/_includes/assets/images/logo.svg" width="196">
 </p>
 
-<h1 align="center">
-    <a href="https://jlinden.nl">jlinden.nl</a>
-</h1>
+<h1 align="center">jlinden.nl</h1>
 
-Hi there! This is the source for my personal website.
+Hi there! This is the source for my [personal website](https://jlinden.nl).
 
 ## Quick setup
 
