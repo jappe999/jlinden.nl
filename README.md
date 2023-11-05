@@ -1,8 +1,6 @@
-<p align="center">
-    <img src="src/_includes/assets/images/logo.svg" width="196">
-</p>
+<img src="src/_includes/assets/images/logo.svg" width="128" />
 
-<h1 align="center">jlinden.nl</h1>
+# jlinden.nl
 
 Hi there! This is the source for my [personal website](https://jlinden.nl).
 
